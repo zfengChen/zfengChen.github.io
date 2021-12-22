@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zfengchen.github.io/List/music/index.html</loc>
+    
+    <lastmod>2021-12-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/List/movies/index.html</loc>
+    
+    <lastmod>2021-12-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/List/gallery/bg1/index.html</loc>
+    
+    <lastmod>2021-12-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/List/gallery/index.html</loc>
+    
+    <lastmod>2021-12-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zfengchen.github.io/archives/index.html</loc>
     
     <lastmod>2021-12-22</lastmod>
@@ -23,20 +51,6 @@
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/List/music/index.html</loc>
-    
-    <lastmod>2021-12-22</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zfengchen.github.io/List/movies/index.html</loc>
-    
-    <lastmod>2021-12-22</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zfengchen.github.io/comments/index.html</loc>
     
     <lastmod>2021-11-23</lastmod>
@@ -44,23 +58,9 @@
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/List/gallery/index.html</loc>
-    
-    <lastmod>2021-10-14</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zfengchen.github.io/List/gallery/wallpaper/index.html</loc>
     
     <lastmod>2021-10-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zfengchen.github.io/List/gallery/ohmygirl/index.html</loc>
-    
-    <lastmod>2021-09-28</lastmod>
     
   </url>
   
