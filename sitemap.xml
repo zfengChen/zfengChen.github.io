@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zfengchen.github.io/about/index.html</loc>
+    
+    <lastmod>2021-12-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zfengchen.github.io/List/music/index.html</loc>
     
     <lastmod>2021-12-22</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://zfengchen.github.io/List/gallery/wallpaper/index.html</loc>
     
     <lastmod>2021-10-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zfengchen.github.io/about/index.html</loc>
-    
-    <lastmod>2021-08-02</lastmod>
     
   </url>
   
