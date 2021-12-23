@@ -6,7 +6,7 @@
   <link href="https://zfengchen.github.io/atom.xml" rel="self"/>
   
   <link href="https://zfengchen.github.io/"/>
-  <updated>2021-12-22T05:37:00.782Z</updated>
+  <updated>2021-12-23T05:21:53.740Z</updated>
   <id>https://zfengchen.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于个人图床问题</title>
+    <link href="https://zfengchen.github.io/posts/2.html"/>
+    <id>https://zfengchen.github.io/posts/2.html</id>
+    <published>2021-12-23T01:50:23.000Z</published>
+    <updated>2021-12-23T05:21:53.740Z</updated>
+    
+    <content type="html"><![CDATA[<p>在网上看到的搭建图床的教程或者使用免费的图床网站。</p><h2 id="免费的图床网站"><a href="#免费的图床网站" class="headerlink" title="免费的图床网站"></a>免费的图床网站</h2><ul><li><p>免费的图床网站主要有<a href="https://www.qiniu.com/">七牛云</a>、<a href="https://imgchr.com/">路过图床</a>、<a href="https://www.superbed.cn/">聚合图床</a>、<a href="https://imgur.loukky.com/home/multiple">公益图床</a>等。</p><blockquote><h3 id="路过图床"><a href="#路过图床" class="headerlink" title="路过图床"></a><a href="https://imgchr.com/">路过图床</a></h3><ul><li>路过图床注意有一些注意事项，如果出现违规的图片就会封IP，不给上传新的图片。<h3 id="公益图床"><a href="#公益图床" class="headerlink" title="公益图床"></a><a href="https://imgur.loukky.com/home/multiple">公益图床</a></h3></li><li>公益图床因为没有用户系统，所以不能管理已上传的图片，也就是说每次上传完之后都要备份好上传后的域名，十分麻烦。</li></ul></blockquote></li></ul><h2 id="自己搭建图床"><a href="#自己搭建图床" class="headerlink" title="自己搭建图床"></a>自己搭建图床</h2><ul><li>一般使用github或者gitee来搭建<blockquote><h3 id="使用github搭建"><a href="#使用github搭建" class="headerlink" title="使用github搭建"></a>使用github搭建</h3><ul><li>搭建前需要准备一个github账号，下载一个PicGo的软件。</li><li>PpicGo设置如下<img src="https://imgs.loukky.com/imgs/2021/12/c314041f773dfda0.png"><blockquote><ol><li><strong>仓库名</strong>是github新建的一个仓库，具体操作自行百度</li><li><strong>分支名</strong>是仓库的分支<img src="https://imgs.loukky.com/imgs/2021/12/192c1bb2b95faf35.png"></li><li><strong>Token</strong>是密钥，这个也自行百度</li><li><strong>指定存储路径</strong>是仓库里的文件夹路径，不设置的话默认放在仓库的根目录下，如需设置，格式为**<em>xxx/**</em>（例如：img/）。</li><li><strong>自定义域名</strong>是设置图片上传成功后，能直接访问的域名。格式一般为：**<em><a href="https://xxx.com/">https://xxx.com/</a>**</em></li></ol></blockquote></li></ul></blockquote></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在网上看到的搭建图床的教程或者使用免费的图床网站。&lt;/p&gt;
+&lt;h2 id=&quot;免费的图床网站&quot;&gt;&lt;a href=&quot;#免费的图床网站&quot; class=&quot;headerlink&quot; title=&quot;免费的图床网站&quot;&gt;&lt;/a&gt;免费的图床网站&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;免费的图床网站主</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://zfengchen.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="技术" scheme="https://zfengchen.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>capstone实作</title>
@@ -48,10 +74,10 @@
   
   <entry>
     <title>第一篇博文</title>
-    <link href="https://zfengchen.github.io/posts/1.html"/>
-    <id>https://zfengchen.github.io/posts/1.html</id>
+    <link href="https://zfengchen.github.io/posts/a1d8635a.html"/>
+    <id>https://zfengchen.github.io/posts/a1d8635a.html</id>
     <published>2021-12-22T05:13:52.000Z</published>
-    <updated>2021-12-22T05:47:34.014Z</updated>
+    <updated>2021-12-23T05:51:16.155Z</updated>
     
     <content type="html"><![CDATA[<p>我欲乘风归去，又恐琼楼玉宇，高处不胜寒。</p><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>使用hexo搭配nodejs搭建一个个人博客，主题使用的是Butterfly，经过某位大佬改装。</p><h2 id="博客的挂载"><a href="#博客的挂载" class="headerlink" title="博客的挂载"></a>博客的挂载</h2><p>个人博客挂载在github上</p><h2 id="文章语法"><a href="#文章语法" class="headerlink" title="文章语法"></a>文章语法</h2><p>使用Markdown语法</p><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://cdn.jsdelivr.net/gh/zhaoze-jpg/Xianqi@main/imgg/9.webp" alt="图片"></p><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=446935665&amp;auto=0&amp;height=66"></iframe>]]></content>
     
