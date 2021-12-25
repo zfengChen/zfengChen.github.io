@@ -130,13 +130,6 @@
 
   
   <url>
-    <loc>https://zfengchen.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2021-12-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zfengchen.github.io/tags/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
@@ -144,14 +137,14 @@
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://zfengchen.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/tags/github/</loc>
+    <loc>https://zfengchen.github.io/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -172,6 +165,13 @@
   </url>
   
   <url>
+    <loc>https://zfengchen.github.io/tags/github/</loc>
+    <lastmod>2021-12-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zfengchen.github.io/tags/artTemplate/</loc>
     <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
@@ -181,14 +181,14 @@
 
   
   <url>
-    <loc>https://zfengchen.github.io/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://zfengchen.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://zfengchen.github.io/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

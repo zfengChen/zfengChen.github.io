@@ -6,7 +6,7 @@
   <link href="https://zfengchen.github.io/atom.xml" rel="self"/>
   
   <link href="https://zfengchen.github.io/"/>
-  <updated>2021-12-25T07:44:28.412Z</updated>
+  <updated>2021-12-25T08:00:29.275Z</updated>
   <id>https://zfengchen.github.io/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>关于artTemplate前后端语法冲突问题</title>
+    <title>解决art-Template前后端语法冲突问题</title>
     <link href="https://zfengchen.github.io/posts/5.html"/>
     <id>https://zfengchen.github.io/posts/5.html</id>
     <published>2021-12-25T07:21:50.000Z</published>
-    <updated>2021-12-25T07:44:28.412Z</updated>
+    <updated>2021-12-25T08:00:29.275Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web-js的引入有问题。"><a href="#问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web-js的引入有问题。" class="headerlink" title="问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web.js的引入有问题。"></a>问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web.js的引入有问题。</h3><p><font color="chocolate">⚠️ 在 art-template 的使用中，它存在前后端冲突的问题，所以它只会接受服务端传过来的数据</font></p><h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><ol><li><p>找到项目中 node_module 下的 art-template 中的 lib /compile 下的 default.js 文件<br>目录结构如图所示</p><p> <img src="https://img-blog.csdnimg.cn/20200605075510975.png#pic_center"></p></li><li><p>其中，将 rules: [navtiveRule, artRule] 中的 navtiveRule 删除</p><p> <img src="https://img-blog.csdnimg.cn/20200605075612846.png#pic_center"></p></li><li><p>之后服务端只能解析 被 <strong><em>{ { } }</em></strong> 包起来的内容，而浏览器端只能使用 <strong><em>&lt;%= %&gt;</em></strong> 语法进行编译</p></li></ol><h2 id="详见大佬解释"><a href="#详见大佬解释" class="headerlink" title="详见大佬解释"></a>详见大佬解释</h2><p><a href="https://blog.csdn.net/u013263917/article/details/78450780?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-1.highlightwordscore&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-1.highlightwordscore">nodejs中art-template模板语法冲突解决方案_坤小的专栏-CSDN博客</a></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="前言：art-template-是一个简约、超快的模板引擎。"><a href="#前言：art-template-是一个简约、超快的模板引擎。" class="headerlink" title="前言：art-template 是一个简约、超快的模板引擎。"></a>前言：art-template 是一个简约、超快的模板引擎。</h3><p>它采用作用域预声明的技术来优化模板渲染速度，从而获得接近 JavaScript 极限的运行性能，并且同时支持 NodeJS 和浏览器。</p><p><a href="http://aui.github.io/art-template/zh-cn/index.html">art-Template官网文档</a></p><h3 id="模板语法："><a href="#模板语法：" class="headerlink" title="模板语法："></a>模板语法：</h3><p><img src="https://www.ipicbed.com/images/2021/12/25/05-img-01.png" alt="05-img-01.png"></p><h3 id="问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web-js的引入有问题。"><a href="#问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web-js的引入有问题。" class="headerlink" title="问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web.js的引入有问题。"></a>问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web.js的引入有问题。</h3><p><font color="chocolate">⚠️ 在 art-template 的使用中，它存在前后端冲突的问题，所以它只会接受服务端传过来的数据</font></p><h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><ol><li><p>找到项目中 node_module 下的 art-template 中的 lib /compile 下的 default.js 文件<br>目录结构如图所示</p><p> <img src="https://img-blog.csdnimg.cn/20200605075510975.png#pic_center"></p></li><li><p>其中，将 rules: [navtiveRule, artRule] 中的 navtiveRule 删除</p><p> <img src="https://img-blog.csdnimg.cn/20200605075612846.png#pic_center"></p></li><li><p>之后服务端只能解析 被 <strong><em>{ { } }</em></strong> 包起来的内容，而浏览器端只能使用 <strong><em>&lt;%= %&gt;</em></strong> 语法进行编译</p></li></ol><h2 id="详见大佬解释"><a href="#详见大佬解释" class="headerlink" title="详见大佬解释"></a>详见大佬解释</h2><p><a href="https://blog.csdn.net/u013263917/article/details/78450780?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-1.highlightwordscore&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-1.highlightwordscore">nodejs中art-template模板语法冲突解决方案_坤小的专栏-CSDN博客</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h3 id=&quot;问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出来的是空白数据，没有报错，起初以为是template-web-js的引入有问题。&quot;&gt;&lt;a href=&quot;#问题：ajax请求后获取到后台传来的数据，在使用模板引擎渲染到页面上。但是渲染出</summary>
+    <summary type="html">&lt;h3 id=&quot;前言：art-template-是一个简约、超快的模板引擎。&quot;&gt;&lt;a href=&quot;#前言：art-template-是一个简约、超快的模板引擎。&quot; class=&quot;headerlink&quot; title=&quot;前言：art-template 是一个简约、超快的模板引擎。&quot;&gt;</summary>
       
     
     
@@ -45,11 +45,11 @@
   </entry>
   
   <entry>
-    <title>关于vscode将项目发布到github上</title>
+    <title>使用vscode将项目发布到github上</title>
     <link href="https://zfengchen.github.io/posts/4.html"/>
     <id>https://zfengchen.github.io/posts/4.html</id>
     <published>2021-12-25T06:55:28.000Z</published>
-    <updated>2021-12-25T07:19:08.120Z</updated>
+    <updated>2021-12-25T07:55:15.409Z</updated>
     
     <content type="html"><![CDATA[<h2 id="先初始化存储库"><a href="#先初始化存储库" class="headerlink" title="先初始化存储库"></a>先初始化存储库</h2><p><img src="https://www.ipicbed.com/images/2021/12/25/04-img-01.png" alt="04-img-01.png"></p><h2 id="提交更改"><a href="#提交更改" class="headerlink" title="提交更改"></a>提交更改</h2><p>会显示要username和email</p><p>控制台输入</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config user.name <span class="token string">'github的用户名'</span><span class="token function">git</span> config user.email <span class="token string">'github的邮箱'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="在github上创建新的库"><a href="#在github上创建新的库" class="headerlink" title="在github上创建新的库"></a>在github上创建新的库</h2><h2 id="点击左上角的三个点，推送"><a href="#点击左上角的三个点，推送" class="headerlink" title="点击左上角的三个点，推送"></a>点击左上角的三个点，推送</h2><p><img src="https://www.ipicbed.com/images/2021/12/25/04-img-02.png" alt="04-img-02.png"></p><h2 id="选择新创建的库"><a href="#选择新创建的库" class="headerlink" title="选择新创建的库"></a>选择新创建的库</h2><p><img src="https://www.ipicbed.com/images/2021/12/25/04-img-03.png" alt="04-img-03.png"></p><p>中途可能会网路不稳定，多试几次</p><p>成功后点击以下按钮，也要多试几次</p><p><img src="https://www.ipicbed.com/images/2021/12/25/04-img-04.png" alt="04-img-04.png"></p><p>然后就成功。</p><hr><h2 id="旧项目添加新分支推送"><a href="#旧项目添加新分支推送" class="headerlink" title="旧项目添加新分支推送"></a>旧项目添加新分支推送</h2><h3 id="把项目克隆到本地，把新的文件覆盖旧的文件，然后创建新的分支，再提交。"><a href="#把项目克隆到本地，把新的文件覆盖旧的文件，然后创建新的分支，再提交。" class="headerlink" title="把项目克隆到本地，把新的文件覆盖旧的文件，然后创建新的分支，再提交。"></a>把项目克隆到本地，把新的文件覆盖旧的文件，然后创建新的分支，再提交。</h3>]]></content>
     
