@@ -6,7 +6,7 @@
   <link href="https://zfengchen.github.io/atom.xml" rel="self"/>
   
   <link href="https://zfengchen.github.io/"/>
-  <updated>2021-12-25T08:00:29.275Z</updated>
+  <updated>2021-12-27T03:12:06.435Z</updated>
   <id>https://zfengchen.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>服务端渲染和客户端渲染</title>
+    <link href="https://zfengchen.github.io/posts/7.html"/>
+    <id>https://zfengchen.github.io/posts/7.html</id>
+    <published>2021-12-27T02:57:51.000Z</published>
+    <updated>2021-12-27T03:12:06.435Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="客户端渲染（Ajax）"><a href="#客户端渲染（Ajax）" class="headerlink" title="客户端渲染（Ajax）"></a>客户端渲染（Ajax）</h2><p>页面的局部刷新</p><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a><strong>优点</strong></h3><ol><li>可以向用户快速展示页面的内容，增加用户体验</li><li>给别人爬虫爬取相应的内容增加一定的困难</li></ol><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a><strong>缺点</strong></h3><ol><li>可能需要向服务器请求多次数据</li><li>不利于SEO 搜索引擎优化，即百度、搜狗等搜索引擎搜索不到客户端渲染的数据</li></ol><h2 id="服务端渲染（NodeJs）"><a href="#服务端渲染（NodeJs）" class="headerlink" title="服务端渲染（NodeJs）"></a>服务端渲染（NodeJs）</h2><p>整个页面的刷新</p><h3 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a><strong>优点</strong></h3><ol><li>可以向用户快速展示页面的内容，增加用户体验</li><li>给别人爬虫爬取相应的内容增加一定的困难</li></ol><h3 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a><strong>缺点</strong></h3><ol><li>可能需要向服务器请求多次数据</li><li>不利于SEO 搜索引擎优化，即百度、搜狗等搜索引擎搜索不到客户端渲染的数据</li></ol><h2 id="区分客户端渲染和服务端渲染"><a href="#区分客户端渲染和服务端渲染" class="headerlink" title="区分客户端渲染和服务端渲染"></a>区分客户端渲染和服务端渲染</h2><ul><li>网页源代码中没有动态数据的，是客户端渲染；（例子：京东的商品评论，局部刷新）</li><li>网页源代码中有数据的，是服务端渲染；（例子：京东商品分类，网址发生改变）</li></ul><p>参考知乎文章：<a href="https://zhuanlan.zhihu.com/p/171579801">客户端渲染和服务器渲染的区别</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;客户端渲染（Ajax）&quot;&gt;&lt;a href=&quot;#客户端渲染（Ajax）&quot; class=&quot;headerlink&quot; title=&quot;客户端渲染（Ajax）&quot;&gt;&lt;/a&gt;客户端渲染（Ajax）&lt;/h2&gt;&lt;p&gt;页面的局部刷新&lt;/p&gt;
+&lt;h3 id=&quot;优点&quot;&gt;&lt;a href=&quot;#</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://zfengchen.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="技术" scheme="https://zfengchen.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="前端" scheme="https://zfengchen.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeJs</title>
+    <link href="https://zfengchen.github.io/posts/6.html"/>
+    <id>https://zfengchen.github.io/posts/6.html</id>
+    <published>2021-12-27T02:43:53.000Z</published>
+    <updated>2021-12-27T02:57:02.113Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于nodejs"><a href="#关于nodejs" class="headerlink" title="关于nodejs"></a>关于nodejs</h1><p><a href="https://www.runoob.com/nodejs/nodejs-tutorial.html">Node.js 教程</a></p><ul><li><p>如果你是一个前端程序员，你不懂得像PHP、Python或Ruby等动态编程语言，然后你想创建自己的服务，那么Node.js是一个非常好的选择。</p></li><li><p>Node.js 是运行在服务端的 JavaScript，如果你熟悉Javascript，那么你将会很容易的学会Node.js。</p></li><li><p>当然，如果你是后端程序员，想部署一些高性能的服务，那么学习Node.js也是一个非常好的选择。</p></li></ul><h1 id="Node介绍"><a href="#Node介绍" class="headerlink" title="Node介绍"></a>Node介绍</h1><h2 id="为什么要学习Node-js"><a href="#为什么要学习Node-js" class="headerlink" title="为什么要学习Node.js"></a>为什么要学习Node.js</h2><ul><li>企业需求<ul><li>具有服务端开发经验更改</li><li>front-end</li><li>back-end</li><li>全栈开发工程师</li><li>基本的网站开发能力<ul><li>服务端</li><li>前端</li><li>运维部署</li></ul></li><li>多人社区</li></ul></li></ul><h2 id="Node-js是什么"><a href="#Node-js是什么" class="headerlink" title="Node.js是什么"></a>Node.js是什么</h2><ul><li>Node.js是JavaScript 运行时</li><li>通俗易懂的讲，Node.js是JavaScript的运行平台</li><li>Node.js既不是语言，也不是框架，它是一个平台</li><li>浏览器中的JavaScript<ul><li>EcmaScript<ul><li>基本语法</li><li>if</li><li>var</li><li>function</li><li>Object</li><li>Array</li></ul></li><li>Bom</li><li>Dom</li></ul></li><li>Node.js中的JavaScript<ul><li>没有Bom，Dom</li><li>EcmaScript</li><li>在Node中这个JavaScript执行环境为JavaScript提供了一些服务器级别的API<ul><li>例如文件的读写</li><li>网络服务的构建</li><li>网络通信</li><li>http服务器</li></ul></li></ul></li><li>构建与Chrome的V8引擎之上<ul><li>代码只是具有特定格式的字符串</li><li>引擎可以认识它，帮你解析和执行</li><li>Google Chrome的V8引擎是目前公认的解析执行JavaScript代码最快的</li><li>Node.js的作者把Google Chrome中的V8引擎移植出来，开发了一个独立的JavaScript运行时环境</li></ul></li><li>Node.js uses an envent-driven,non-blocking I/O mode that makes it lightweight and efficent.<ul><li>envent-driven 事件驱动</li><li>non-blocking I/O mode 非阻塞I/O模型（异步）</li><li>ightweight and efficent. 轻量和高效</li></ul></li><li>Node.js package ecosystem,npm,is the larget scosystem of open sourcr libraries in the world<ul><li>npm 是世界上最大的开源生态系统</li><li>绝大多数JavaScript相关的包都存放在npm上，这样做的目的是为了让开发人员更方便的去下载使用</li><li>npm install jquery</li></ul></li></ul><h2 id="Node能做什么"><a href="#Node能做什么" class="headerlink" title="Node能做什么"></a>Node能做什么</h2><ul><li>web服务器后台</li><li>命令行工具<ul><li>npm(node)</li><li>git(c语言)</li><li>hexo（node）</li><li>…</li></ul></li><li>对于前端工程师来讲，接触最多的是它的命令行工具<ul><li>自己写的很少，主要是用别人第三方的</li><li>webpack</li><li>gulp</li><li>npm</li></ul></li></ul><p>参考：<a href="https://substantial-jumpsuit-8b1.notion.site/nodeJS-e4c603453af6472f90a6b5ca126091fd">李鹏周老师的笔记</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;关于nodejs&quot;&gt;&lt;a href=&quot;#关于nodejs&quot; class=&quot;headerlink&quot; title=&quot;关于nodejs&quot;&gt;&lt;/a&gt;关于nodejs&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.runoob.com/nodejs/nodejs-</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://zfengchen.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="技术" scheme="https://zfengchen.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="前端" scheme="https://zfengchen.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="nodejs" scheme="https://zfengchen.github.io/tags/nodejs/"/>
+    
+  </entry>
   
   <entry>
     <title>解决art-Template前后端语法冲突问题</title>
