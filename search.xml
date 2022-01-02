@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>package.json分析</title>
+      <link href="/posts/15.html"/>
+      <url>/posts/15.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="package-json里常见的配置"><a href="#package-json里常见的配置" class="headerlink" title="package.json里常见的配置"></a>package.json里常见的配置</h2><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">{</span>  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"webpack-text"</span><span class="token punctuation">,</span><span class="token comment">//版本</span>  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span>  <span class="token property">"main"</span><span class="token operator">:</span> <span class="token string">"index.js"</span><span class="token punctuation">,</span><span class="token comment">// 存储命令的别名</span>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"test"</span><span class="token operator">:</span> <span class="token string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="token punctuation">,</span>    <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"webpack"</span>  <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token property">"keywords"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token property">"author"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span><span class="token comment">// 项目遵循的协议 默认ISC协议（就是开发源代码的协议）</span>  <span class="token property">"license"</span><span class="token operator">:</span> <span class="token string">"ISC"</span><span class="token punctuation">,</span><span class="token comment">//开发依赖</span>  <span class="token property">"devDependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"css-loader"</span><span class="token operator">:</span> <span class="token string">"^6.5.1"</span><span class="token punctuation">,</span>    <span class="token property">"html-loader"</span><span class="token operator">:</span> <span class="token string">"^3.0.1"</span><span class="token punctuation">,</span>    <span class="token property">"html-webpack-plugin"</span><span class="token operator">:</span> <span class="token string">"^5.5.0"</span><span class="token punctuation">,</span>    <span class="token property">"style-loader"</span><span class="token operator">:</span> <span class="token string">"^3.3.1"</span><span class="token punctuation">,</span>    <span class="token property">"ts-loader"</span><span class="token operator">:</span> <span class="token string">"^9.2.6"</span><span class="token punctuation">,</span>    <span class="token property">"vue-loader"</span><span class="token operator">:</span> <span class="token string">"^15.9.8"</span><span class="token punctuation">,</span>    <span class="token property">"vue-template-compiler"</span><span class="token operator">:</span> <span class="token string">"^2.6.14"</span><span class="token punctuation">,</span>    <span class="token property">"webpack"</span><span class="token operator">:</span> <span class="token string">"^5.64.1"</span><span class="token punctuation">,</span>    <span class="token property">"webpack-cli"</span><span class="token operator">:</span> <span class="token string">"^4.9.1"</span><span class="token punctuation">,</span>    <span class="token property">"webpack-dev-server"</span><span class="token operator">:</span> <span class="token string">"^4.5.0"</span>  <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token comment">//项目依赖</span>  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"jquery"</span><span class="token operator">:</span> <span class="token string">"^3.6.0"</span>  <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><a href="https://blog.csdn.net/weixin_62273462/article/details/121110931">npm安装package.json中的模块依赖_致敬code大神的博客-CSDN博客</a></p><blockquote><p><strong>npm一键安装package.json里的所有依赖文件</strong></p><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></blockquote><blockquote><p><strong>dependencies（核心依赖/运行依赖 基本上是第三方包）</strong></p><p>只安装核心依赖项的指令</p><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">--</span>dependencies<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></blockquote><blockquote><p><strong>devDependencies（开发依赖）</strong></p><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">--</span>devDependencies<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MVVM和MVC</title>
+      <link href="/posts/14.html"/>
+      <url>/posts/14.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h2><p>属于一种架构模式，核心思想是：数据驱动试图</p><p>好处是：</p><ol><li><p>低耦合</p></li><li><p>可重用性高</p></li><li><p>独立开发</p></li><li><p>可测试性</p></li></ol><blockquote><p><strong>详解MVVM</strong></p><p>M：<strong>业务数据模型</strong>和试图没关系</p><p>和java里面的service服务层一样</p><p>V：视图（view）</p><p>VM：视图数据模型，视图数据</p></blockquote><blockquote><p><strong>详解MVC</strong></p><p>M：<strong>业务数据模型</strong></p><p>一个或多个 JavaBean 对象，用于存储数据（实体模型，由 JavaBean 类创建）和处理业务逻辑（业务模型，由一般的 Java 类创建）。</p><p>V：是指用户界面（jsp）</p><p>一个或多个&nbsp;<a href="http://c.biancheng.net/jsp/">JSP</a>&nbsp;页面，向控制器提交数据和为模型提供数据显示，JSP 页面主要使用 HTML 标记和 JavaBean 标记来显示数据。</p><p>C：则是控制器（servlet）</p><p>一个或多个 Servlet 对象，根据视图提交的请求进行控制，即将请求转发给处理业务逻辑的 JavaBean，并将处理结果存放到实体模型 JavaBean 中，输出给视图显示。</p></blockquote><p>MVVM是参考MVC而来的</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 前端 </tag>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于vue的音乐盒</title>
       <link href="/posts/13.html"/>
       <url>/posts/13.html</url>

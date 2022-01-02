@@ -6,7 +6,7 @@
   <link href="https://zfengchen.github.io/atom.xml" rel="self"/>
   
   <link href="https://zfengchen.github.io/"/>
-  <updated>2021-12-28T05:20:13.611Z</updated>
+  <updated>2022-01-02T01:15:21.335Z</updated>
   <id>https://zfengchen.github.io/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>package.json分析</title>
+    <link href="https://zfengchen.github.io/posts/15.html"/>
+    <id>https://zfengchen.github.io/posts/15.html</id>
+    <published>2022-01-02T00:45:17.000Z</published>
+    <updated>2022-01-02T01:15:21.335Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="package-json里常见的配置"><a href="#package-json里常见的配置" class="headerlink" title="package.json里常见的配置"></a>package.json里常见的配置</h2><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">{</span>  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"webpack-text"</span><span class="token punctuation">,</span><span class="token comment">//版本</span>  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span>  <span class="token property">"main"</span><span class="token operator">:</span> <span class="token string">"index.js"</span><span class="token punctuation">,</span><span class="token comment">// 存储命令的别名</span>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"test"</span><span class="token operator">:</span> <span class="token string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="token punctuation">,</span>    <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"webpack"</span>  <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token property">"keywords"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token property">"author"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span><span class="token comment">// 项目遵循的协议 默认ISC协议（就是开发源代码的协议）</span>  <span class="token property">"license"</span><span class="token operator">:</span> <span class="token string">"ISC"</span><span class="token punctuation">,</span><span class="token comment">//开发依赖</span>  <span class="token property">"devDependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"css-loader"</span><span class="token operator">:</span> <span class="token string">"^6.5.1"</span><span class="token punctuation">,</span>    <span class="token property">"html-loader"</span><span class="token operator">:</span> <span class="token string">"^3.0.1"</span><span class="token punctuation">,</span>    <span class="token property">"html-webpack-plugin"</span><span class="token operator">:</span> <span class="token string">"^5.5.0"</span><span class="token punctuation">,</span>    <span class="token property">"style-loader"</span><span class="token operator">:</span> <span class="token string">"^3.3.1"</span><span class="token punctuation">,</span>    <span class="token property">"ts-loader"</span><span class="token operator">:</span> <span class="token string">"^9.2.6"</span><span class="token punctuation">,</span>    <span class="token property">"vue-loader"</span><span class="token operator">:</span> <span class="token string">"^15.9.8"</span><span class="token punctuation">,</span>    <span class="token property">"vue-template-compiler"</span><span class="token operator">:</span> <span class="token string">"^2.6.14"</span><span class="token punctuation">,</span>    <span class="token property">"webpack"</span><span class="token operator">:</span> <span class="token string">"^5.64.1"</span><span class="token punctuation">,</span>    <span class="token property">"webpack-cli"</span><span class="token operator">:</span> <span class="token string">"^4.9.1"</span><span class="token punctuation">,</span>    <span class="token property">"webpack-dev-server"</span><span class="token operator">:</span> <span class="token string">"^4.5.0"</span>  <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>  <span class="token comment">//项目依赖</span>  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"jquery"</span><span class="token operator">:</span> <span class="token string">"^3.6.0"</span>  <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><a href="https://blog.csdn.net/weixin_62273462/article/details/121110931">npm安装package.json中的模块依赖_致敬code大神的博客-CSDN博客</a></p><blockquote><p><strong>npm一键安装package.json里的所有依赖文件</strong></p><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></blockquote><blockquote><p><strong>dependencies（核心依赖/运行依赖 基本上是第三方包）</strong></p><p>只安装核心依赖项的指令</p><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">--</span>dependencies<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></blockquote><blockquote><p><strong>devDependencies（开发依赖）</strong></p><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm install <span class="token operator">--</span>devDependencies<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;package-json里常见的配置&quot;&gt;&lt;a href=&quot;#package-json里常见的配置&quot; class=&quot;headerlink&quot; title=&quot;package.json里常见的配置&quot;&gt;&lt;/a&gt;package.json里常见的配置&lt;/h2&gt;&lt;pre clas</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://zfengchen.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="技术" scheme="https://zfengchen.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="前端" scheme="https://zfengchen.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MVVM和MVC</title>
+    <link href="https://zfengchen.github.io/posts/14.html"/>
+    <id>https://zfengchen.github.io/posts/14.html</id>
+    <published>2022-01-02T00:44:08.000Z</published>
+    <updated>2022-01-02T00:56:32.849Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h2><p>属于一种架构模式，核心思想是：数据驱动试图</p><p>好处是：</p><ol><li><p>低耦合</p></li><li><p>可重用性高</p></li><li><p>独立开发</p></li><li><p>可测试性</p></li></ol><blockquote><p><strong>详解MVVM</strong></p><p>M：<strong>业务数据模型</strong>和试图没关系</p><p>和java里面的service服务层一样</p><p>V：视图（view）</p><p>VM：视图数据模型，视图数据</p></blockquote><blockquote><p><strong>详解MVC</strong></p><p>M：<strong>业务数据模型</strong></p><p>一个或多个 JavaBean 对象，用于存储数据（实体模型，由 JavaBean 类创建）和处理业务逻辑（业务模型，由一般的 Java 类创建）。</p><p>V：是指用户界面（jsp）</p><p>一个或多个&nbsp;<a href="http://c.biancheng.net/jsp/">JSP</a>&nbsp;页面，向控制器提交数据和为模型提供数据显示，JSP 页面主要使用 HTML 标记和 JavaBean 标记来显示数据。</p><p>C：则是控制器（servlet）</p><p>一个或多个 Servlet 对象，根据视图提交的请求进行控制，即将请求转发给处理业务逻辑的 JavaBean，并将处理结果存放到实体模型 JavaBean 中，输出给视图显示。</p></blockquote><p>MVVM是参考MVC而来的</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;MVVM&quot;&gt;&lt;a href=&quot;#MVVM&quot; class=&quot;headerlink&quot; title=&quot;MVVM&quot;&gt;&lt;/a&gt;MVVM&lt;/h2&gt;&lt;p&gt;属于一种架构模式，核心思想是：数据驱动试图&lt;/p&gt;
+&lt;p&gt;好处是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;低耦合&lt;/p&gt;
+&lt;/li</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://zfengchen.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="技术" scheme="https://zfengchen.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="前端" scheme="https://zfengchen.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue" scheme="https://zfengchen.github.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>基于vue的音乐盒</title>
