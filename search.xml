@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>hexo相关指令</title>
+      <link href="/posts/16.html"/>
+      <url>/posts/16.html</url>
+      
+        <content type="html"><![CDATA[<p>时隔多日，我又来更新我的小博客咯~</p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul><li>前一阵子忙于学习和找工作，导致没有时间经营我的小博客，现在我又回来了。</li><li>过了一段时间，我发现我忘记了hexo的相关指令，于是决定在这里记录下来，并置顶，这样一来就不怕忘记咯~</li></ul><h2 id="Hexo常见指令"><a href="#Hexo常见指令" class="headerlink" title="Hexo常见指令"></a>Hexo常见指令</h2><pre class="line-numbers language-none"><code class="language-none">&lt;!-- 新建一篇文章 --&gt;$ hexo new "文章标题"&lt;!-- 清理缓存 --&gt;$ hexo clean&lt;!-- 生成静态文件 --&gt;$ hexo g&lt;!-- 开启本地服务器，默认端口http://127.0.0.1:4000 --&gt;$ hexo s&lt;!-- 部署网站 --&gt;$ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>以上这些就够用了，更多指令，可以去Hexo官方文档查看<br><a href="https://hexo.io/zh-cn/docs/">Hexo中文文档</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>package.json分析</title>
       <link href="/posts/15.html"/>
       <url>/posts/15.html</url>
@@ -69,7 +96,7 @@
       
       <categories>
           
-          <category> 学习 </category>
+          <category> 项目 </category>
           
       </categories>
       
@@ -102,7 +129,7 @@
       
       <categories>
           
-          <category> 学习 </category>
+          <category> 项目 </category>
           
       </categories>
       
@@ -389,8 +416,6 @@
       
       
       <categories>
-          
-          <category> 学习 </category>
           
           <category> 项目 </category>
           
