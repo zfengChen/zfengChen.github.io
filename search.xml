@@ -4,6 +4,172 @@
   
     
     <entry>
+      <title>javascript里的this</title>
+      <link href="/posts/22.html"/>
+      <url>/posts/22.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ul><li>this有四种绑定方式，分别是：默认绑定（window）、隐式绑定、硬绑定（显示绑定）、构造函数绑定（new）</li><li>this的指向在函数定义的时候是确定不了的，只有函数执行的时候才能确定this到底指向谁，实际上this的最终指向的是那个调用它的对象</li></ul><h2 id="默认绑定（window）"><a href="#默认绑定（window）" class="headerlink" title="默认绑定（window）"></a>默认绑定（window）</h2><p>函数内不存在任何值，且在全局内调用函数</p><pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function">girl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token function">girl</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 输出 window，这里相当于window.girl()</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="隐式绑定"><a href="#隐式绑定" class="headerlink" title="隐式绑定"></a>隐式绑定</h2><p>函数里面有值，指向函数内部的值</p><pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token keyword">var</span> girl <span class="token operator">=</span> <span class="token punctuation">{</span>name <span class="token operator">:</span> <span class="token string">'zs'</span><span class="token function-variable function">detail</span> <span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>girl<span class="token punctuation">.</span><span class="token function">detail</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 输出 zs</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="硬绑定（显示绑定）"><a href="#硬绑定（显示绑定）" class="headerlink" title="硬绑定（显示绑定）"></a>硬绑定（显示绑定）</h2><p>在对象外部定义另一个含有相关属性值的对象，然后通过**call()、apply()、bind()**重定义对象里面的this的指向。最后使this指向新的指定对象（比如girl1、girl2）</p><pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token keyword">var</span> girl <span class="token operator">=</span> <span class="token punctuation">{</span>name <span class="token operator">:</span> <span class="token string">'zs'</span><span class="token function-variable function">detail</span> <span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token keyword">var</span> girl1 <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token operator">:</span><span class="token string">'ls'</span><span class="token punctuation">}</span><span class="token keyword">var</span> girl2 <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token operator">:</span><span class="token string">'ww'</span><span class="token punctuation">}</span><span class="token comment">// call apply bind 为显示绑定</span>girl<span class="token punctuation">.</span><span class="token function">detail</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>girl1<span class="token punctuation">)</span> <span class="token comment">// 输出 ls</span>girl<span class="token punctuation">.</span><span class="token function">detail</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>girl2<span class="token punctuation">)</span> <span class="token comment">// 输出 ww</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="构造函数绑定"><a href="#构造函数绑定" class="headerlink" title="构造函数绑定"></a>构造函数绑定</h2><pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function">Lover</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">detail</span> <span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">'zs'</span><span class="token keyword">var</span> xH <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Lover</span><span class="token punctuation">(</span><span class="token string">'xh'</span><span class="token punctuation">)</span>xH<span class="token punctuation">.</span>detail<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">// 输出 ww</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>this的指向在函数创建的时候是决定不了的，在调用的时候才能决定，谁调用的就指向谁，一定要搞清楚这个。</p><h3 id="最后推荐看一下一位博主总结的this指向问题-以及b站蛋老师的视频"><a href="#最后推荐看一下一位博主总结的this指向问题-以及b站蛋老师的视频" class="headerlink" title="最后推荐看一下一位博主总结的this指向问题,以及b站蛋老师的视频"></a>最后推荐看一下一位博主总结的this指向问题,以及b站蛋老师的视频</h3><p><a href="https://www.cnblogs.com/pssp/p/5216085.html">追梦子-彻底理解js中this的指向，不必硬背。</a></p><iframe src="//player.bilibili.com/player.html?aid=71894678&amp;bvid=BV1BE411677T&amp;cid=124574863&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="700"> </iframe>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> this </tag>
+            
+            <tag> 面试高频题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git远程仓库</title>
+      <link href="/posts/21.html"/>
+      <url>/posts/21.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>Git远程仓库</strong></p><ul><li><p>Git 并不像 SVN 那样有个中心服务器。</p></li><li><p>目前我们使用到的 Git 命令都是在本地执行，如果你想通过 Git 分享你的代码或者与其他开发人员合作。 你就需要将数据放到一台其他开发人员能够连接的服务器上。</p></li></ul><h2 id="Git远程仓库"><a href="#Git远程仓库" class="headerlink" title="Git远程仓库"></a>Git远程仓库</h2><ul><li><p>Git中存在两种类型的仓库，即本地仓库和远程仓库。</p></li><li><p>我们可以借助互联网上提供的一些代码托管服务来实现，其中比较常用的有GitHub、码云、GitLab（公司使用）等。 </p></li><li><p>gitHub（ 地址：<a href="https://github.com/">https://github.com/</a> ）是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名gitHub </p></li><li><p>码云（地址： <a href="https://gitee.com/">https://gitee.com/</a> ）是国内的一个代码托管平台，由于服务器在国内，所以相比于 GitHub，码云速度会更快 GitLab （地址： <a href="https://about.gitlab.com/">https://about.gitlab.com/</a> ）是一个用于仓库管理系统的开源项目，使用Git作 为代码管理工具，并在此基础上搭建起来的web服务,一般用于在企业、学校等内部网络搭建git私服。</p></li></ul><h3 id="前提：必须有公钥"><a href="#前提：必须有公钥" class="headerlink" title="前提：必须有公钥"></a>前提：必须有公钥</h3><p>若没有公钥，需要先生成公钥</p><p>生成SSH公钥<br>ssh-keygen -t rsa</p><p>不断回车<br>如果公钥已经存在，则自动覆盖<br>Gitee设置账户共公钥</p><p>获取公钥<br>cat ~/.ssh/id_rsa.pub</p><p>验证是否配置成功<br>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></p><h3 id="1、-操作远程仓库"><a href="#1、-操作远程仓库" class="headerlink" title="1、 操作远程仓库"></a><strong>1、 操作远程仓库</strong></h3><h4 id="1-1、添加远程仓库"><a href="#1-1、添加远程仓库" class="headerlink" title="1.1、添加远程仓库"></a><strong>1.1、添加远程仓库</strong></h4><p><strong>此操作是先初始化本地库，然后与已创建的远程库进行对接</strong>。</p><p>命令： <strong>git remote add &lt;远端名称（一般为origin）&gt; &lt;仓库路径（ssh地址）&gt;</strong></p><p>远端名称，默认是origin，取决于远端服务器设置</p><p>仓库路径，从远端服务器获取此URL</p><p>例如: git remote add origin <a href="mailto:git@gitee.com">git@gitee.com</a>:czbk_zhang_meng/git_test.git</p><h4 id="1-2、查看远程仓库"><a href="#1-2、查看远程仓库" class="headerlink" title="1.2、查看远程仓库"></a><strong>1.2、查看远程仓库</strong></h4><p>命令：<strong>git remote</strong></p><p>出现origin（远端名称）表示成功</p><h4 id="1-3、推送到远程仓库"><a href="#1-3、推送到远程仓库" class="headerlink" title="1.3、推送到远程仓库"></a><strong>1.3、推送到远程仓库</strong></h4><p>命令：git push [-f] [–set-upstream] [远端名称 [本地分支名][:远端分支名] ]</p><p>如果远程分支名和本地分支名称相同，则可以只写本地分支</p><p><strong>git push origin master（使用情景：远程仓库为空）</strong></p><ul><li><p>-f 表示强制覆盖（一般禁用，只允许添加，不允许覆盖）</p></li><li><p>–set-upstream 推送到远端的同时并且建立起和远端分支的关联关系。</p><p>  <strong>git push –set-upstream origin master（使用情景：远程仓库不为空，用于绑定关系，建议第一次推送就加上）</strong></p></li></ul><p>如果<strong>当前分支已经和远端分支关联</strong>，则可以省略分支名和远端名。</p><p>git push 将 master 分支推送到已关联的远端分支。</p><h4 id="1-4、-本地分支与远程分支的关联关系"><a href="#1-4、-本地分支与远程分支的关联关系" class="headerlink" title="1.4、 本地分支与远程分支的关联关系"></a><strong>1.4、 本地分支与远程分支的关联关系</strong></h4><p>查看关联关系我们可以使用 git branch -vv 命令</p><h4 id="1-5、从远程仓库克隆"><a href="#1-5、从远程仓库克隆" class="headerlink" title="1.5、从远程仓库克隆"></a><strong>1.5、从远程仓库克隆</strong></h4><p>如果已经有一个远端仓库，我们可以直接clone到本地。</p><p>命令: git clone &lt;仓库路径&gt; [本地目录]</p><p>本地目录可以省略，会自动生成一个目录</p><h4 id="1-6、从远程仓库中抓取和拉取"><a href="#1-6、从远程仓库中抓取和拉取" class="headerlink" title="1.6、从远程仓库中抓取和拉取"></a><strong>1.6、从远程仓库中抓取和拉取</strong></h4><p>远程分支和本地的分支一样，我们可以进行merge操作，只是需要先把远端仓库里的更新都下载到本地，再进行操作。</p><ul><li><p><strong>抓取 命令：git fetch [remote name] [branch name]</strong></p><ul><li><strong>抓取指令就是将仓库里的更新都抓取到本地，不会进行合并，后续还要自己进行（merge合并分支）</strong></li><li>如果不指定远端名称和分支名，则抓取所有分支</li></ul></li><li><p><strong>拉取 命令：git pull [remote name] [branch name]</strong></p><ul><li><strong>拉取指令就是将远端仓库的修改拉到本地并自动进行合并，等同于fetch+merge</strong></li><li>如果不指定远端名称和分支名，则抓取所有并更新当前分支。</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git分支</title>
+      <link href="/posts/20.html"/>
+      <url>/posts/20.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>Git分支</strong></p><ul><li>几乎每一种版本控制系统都以某种形式支持分支。使用分支意味着你可以从开发主线上分离开来，然后在不影响主线的同时继续工作。</li><li>有人把 Git 的分支模型称为必杀技特性，而正是因为它，将 Git 从版本控制系统家族里区分出来。</li></ul><p><strong>Git远程仓库</strong></p><ul><li>Git 并不像 SVN 那样有个中心服务器。</li><li>目前我们使用到的 Git 命令都是在本地执行，如果你想通过 Git 分享你的代码或者与其他开发人员合作。 你就需要将数据放到一台其他开发人员能够连接的服务器上。</li></ul><h2 id="Git分支"><a href="#Git分支" class="headerlink" title="Git分支"></a>Git分支</h2><p>几乎所有的版本控制系统都以某种形式支持分支。 使用分支意味着你可以把你的工作从开发主线上分离开来进行重大的Bug修改、开发新的功能，以免影响开发主线。</p><h3 id="1、查看本地分支"><a href="#1、查看本地分支" class="headerlink" title="1、查看本地分支"></a><strong>1、查看本地分支</strong></h3><p>命令：<strong>git branch</strong></p><h3 id="2、创建本地分支"><a href="#2、创建本地分支" class="headerlink" title="2、创建本地分支"></a><strong>2、创建本地分支</strong></h3><p>命令：<strong>git branch 分支名</strong></p><h3 id="3、切换分支-checkout"><a href="#3、切换分支-checkout" class="headerlink" title="*3、切换分支(checkout)**"></a>*<em>3、</em>切换分支(checkout)**</h3><p>命令：<strong>git checkout 分支名</strong></p><p>我们还可以直接切换到一个不存在的分支（创建并切换）</p><p>命令：git checkout -b 分支名</p><h3 id="4、合并分支-merge"><a href="#4、合并分支-merge" class="headerlink" title="4、合并分支(merge)"></a><strong>4、合并分支(merge)</strong></h3><p>一个分支上的提交可以合并到另一个分支</p><p>命令：<strong>git merge 分支名称</strong></p><h3 id="5、删除分支"><a href="#5、删除分支" class="headerlink" title="5、删除分支"></a><strong>5、删除分支</strong></h3><p><strong>不能删除当前分支，只能删除其他分支</strong></p><p>git branch -d b1 删除分支时，需要做各种检查</p><p>git branch -D b1 不做任何检查，强制删除</p><h3 id="6、解决冲突"><a href="#6、解决冲突" class="headerlink" title="6、解决冲突"></a><strong>6、解决冲突</strong></h3><p>当两个分支上对文件的修改可能会存在冲突，例如同时修改了同一个文件的同一行，这时就需要手动解</p><p>决冲突，解决冲突步骤如下：</p><pre><code>(1) 处理文件中冲突的地方(2) 将解决完冲突的文件加入暂存区(add)(3) 提交到仓库(commit)</code></pre><p>冲突部分的内容处理如下所示：</p><p><img src="https://www.ipicbed.com/images/2022/01/22/cc7066cade0803da8695f78642950dd6.png" alt="https://www.ipicbed.com/images/2022/01/22/cc7066cade0803da8695f78642950dd6.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git基础</title>
+      <link href="/posts/19.html"/>
+      <url>/posts/19.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ul><li>Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。</li><li>也是Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。</li></ul><h1 id="git基础配置"><a href="#git基础配置" class="headerlink" title="git基础配置"></a>git基础配置</h1><h3 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h3><ul><li>Git GUI：Git提供的图形界面工具</li><li>Git Bash：Git提供的命令行工具</li></ul><ol><li><p>打开Git Bash</p></li><li><p>设置用户信息</p><ul><li><p>git confifig –global user.name “itcast”</p></li><li><p>git confifig –global user.email “<a href="mailto:hello@itcast.cn">hello@itcast.cn</a>”</p></li></ul></li><li><p>查看配置信息</p><ul><li><p>git confifig –global user.name</p></li><li><p>git confifig –global user.email</p></li></ul></li></ol><h1 id="git基础操作指令"><a href="#git基础操作指令" class="headerlink" title="git基础操作指令"></a>git基础操作指令</h1><p>Git工作目录下对于文件的<strong>修改</strong>(增加、删除、更新)会存在几个状态，这些<strong>修改</strong>的状态会随着我们执行Git的命令而发生变化。</p><p><img src="https://www.ipicbed.com/images/2022/01/22/git.png" alt="https://www.ipicbed.com/images/2022/01/22/git.png"></p><p>主要命令：</p><p><strong>1. git add (工作区 –&gt; 暂存区)</strong> </p><p><strong>2. git commit (暂存区 –&gt; 本地仓库)</strong></p><p><strong>3.1 查看修改的状态（status）</strong></p><p>作用：查看的修改的状态（暂存区、工作区）</p><p>命令形式：<strong>git status</strong></p><p><strong>3.2 添加工作区到暂存区(add)</strong></p><p>作用：添加工作区一个或多个文件的修改到暂存区</p><p>命令形式：git add 单个文件名/通配符</p><p>将所有修改加入暂存区：<strong>git add .</strong></p><p><strong>3.3 提交暂存区到本地仓库(commit)</strong></p><p>作用：提交暂存区内容到本地仓库的当前分支</p><p>命令形式：<strong>git commit -m ‘注释内容’</strong></p><p><strong>3.4 查看提交日志(log)</strong></p><p><strong>在 3.1 中配置的别名 **<em>git-log</em></strong> 就包含了这些参数，所以后续可以直接使用指令 git-log**</p><ul><li><p>作用:查看提交记录</p></li><li><p>命令形式：git log [option]</p></li><li><p>options</p><ul><li>-all 显示所有分支</li><li>-pretty=oneline 将提交信息显示为一行</li><li>-abbrev-commit 使得输出的commitId更简短</li><li>-graph 以图的形式显示</li></ul></li></ul><p><strong>3.5 版本回退</strong></p><p>作用：版本切换</p><p>命令形式：<strong>git reset –hard commitID</strong></p><p>commitID 可以使用 git-log 或 git log 指令查看</p><p>如何查看已经删除的记录？</p><p>git reflflog</p><p>这个指令可以看到已经删除的提交记录</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>node连接mysql</title>
+      <link href="/posts/18.html"/>
+      <url>/posts/18.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前提：安装插件express（4-17-1）和mysql（2-2-5），配置package-json（添加type属性）"><a href="#前提：安装插件express（4-17-1）和mysql（2-2-5），配置package-json（添加type属性）" class="headerlink" title="前提：安装插件express（4.17.1）和mysql（2.2.5），配置package.json（添加type属性）"></a>前提：安装插件express（4.17.1）和mysql（2.2.5），配置package.json（添加type属性）</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">npm i express@4<span class="token punctuation">.</span>17<span class="token punctuation">.</span>1 mysql2@2<span class="token punctuation">.</span>2<span class="token punctuation">.</span>5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>添加type属性，值为module。目的是支持es6语法</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">{</span>  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"module"</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>创建db数据库操作模块（连接池）</p><pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token comment">// db文件夹下index.js</span><span class="token keyword">import</span> mysql <span class="token keyword">from</span> <span class="token string">'mysql2'</span><span class="token keyword">const</span> pool <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createPool</span><span class="token punctuation">(</span><span class="token punctuation">{</span>  host<span class="token operator">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span> <span class="token comment">// 地址</span>  port<span class="token operator">:</span> <span class="token string">'3306'</span><span class="token punctuation">,</span>  database<span class="token operator">:</span> <span class="token string">'数据库名字'</span><span class="token punctuation">,</span>  user<span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>  password<span class="token operator">:</span><span class="token string">'123456'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token keyword">export</span> <span class="token keyword">default</span> pool<span class="token punctuation">.</span><span class="token function">promise</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>创建并封装对数据库需要执行的方法(可以不封装，直接将代码写在路由模块里面)</p><pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token comment">// contyller文件夹下user_ctrl.js</span><span class="token keyword">import</span> db <span class="token keyword">from</span> <span class="token string">'../db/index.js'</span><span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">getAllUser</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">const</span> <span class="token punctuation">[</span>data<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">await</span> db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token string">'select * from user'</span><span class="token punctuation">)</span>  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">{</span>    status<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>    message<span class="token operator">:</span> <span class="token string">'success'</span><span class="token punctuation">,</span>    data  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>创建路由</p><pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token comment">// router文件夹下userRouter.js</span><span class="token keyword">import</span> express <span class="token keyword">from</span> <span class="token string">'express'</span><span class="token keyword">import</span> <span class="token punctuation">{</span> getAllUser <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../controller/user_ctrl.js'</span> <span class="token comment">// 按需导入操作数据库的方法</span><span class="token keyword">const</span> router <span class="token operator">=</span> express<span class="token punctuation">.</span><span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span>router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> getAllUser<span class="token punctuation">)</span><span class="token keyword">export</span> <span class="token keyword">default</span> router<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>创建服务器</p><pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token comment">// app.js</span><span class="token keyword">import</span> express <span class="token keyword">from</span> <span class="token string">'express'</span><span class="token keyword">import</span> <span class="token punctuation">{</span>userRouter<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./router/userRouter.js'</span><span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">// 第一个参数是可选</span>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/api'</span><span class="token punctuation">,</span>userRouter<span class="token punctuation">)</span>app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'80'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'running at http://127.0.0.1'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> nodejs </tag>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关系型数据库和非关系型数据库</title>
+      <link href="/posts/17.html"/>
+      <url>/posts/17.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、关系型数据库"><a href="#一、关系型数据库" class="headerlink" title="一、关系型数据库"></a><strong>一、关系型数据库</strong></h2><p>关系型数据库最典型的数据结构是表，由二维表及其之间的联系所组成的一个数据组织。<br><img src="https://images2017.cnblogs.com/blog/1013528/201709/1013528-20170926113945323-238845177.png"></p><h3 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h3><ol><li>易于维护：都是使用表结构，格式一致；</li><li>使用方便：SQL语言通用，可用于复杂查询；</li><li>复杂操作：支持SQL，可用于一个表以及多个表之间非常复杂的查询。</li></ol><h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3><ol><li>读写性能比较差，尤其是海量数据的高效率读写；</li><li>固定的表结构，灵活度稍欠；</li><li>高并发读写需求，传统关系型数据库来说，硬盘I/O是一个很大的瓶颈。</li></ol><h2 id="二、非关系型数据库"><a href="#二、非关系型数据库" class="headerlink" title="二、非关系型数据库"></a><strong>二、非关系型数据库</strong></h2><p>非关系型数据库严格上不是一种数据库，应该是一种数据结构化存储方法的集合，可以是文档或者键值对等。<br><img src="https://images2017.cnblogs.com/blog/1013528/201709/1013528-20170926114007198-781865994.png"></p><h3 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h3><ol><li>格式灵活：存储数据的格式可以是key,value形式、文档形式、图片形式等等，文档形式、图片形式等等，使用灵活，应用场景广泛，而关系型数据库则只支持基础类型。</li><li>速度快：nosql可以使用硬盘或者随机存储器作为载体，而关系型数据库只能使用硬盘；</li><li>高扩展性；</li><li>成本低：nosql数据库部署简单，基本都是开源软件。</li></ol><h3 id="缺点：-1"><a href="#缺点：-1" class="headerlink" title="缺点："></a>缺点：</h3><ol><li>不提供sql支持，学习和使用成本较高；</li><li>无事务处理；</li><li>数据结构相对复杂，复杂查询方面稍欠。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 数据库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo相关指令</title>
       <link href="/posts/16.html"/>
       <url>/posts/16.html</url>
