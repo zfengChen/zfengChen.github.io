@@ -270,13 +270,6 @@
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/tags/github/</loc>
-    <lastmod>2022-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zfengchen.github.io/tags/nodejs/</loc>
     <lastmod>2022-01-27</lastmod>
     <changefreq>daily</changefreq>
@@ -285,6 +278,13 @@
   
   <url>
     <loc>https://zfengchen.github.io/tags/mongodb/</loc>
+    <lastmod>2022-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/tags/github/</loc>
     <lastmod>2022-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -326,6 +326,13 @@
   </url>
   
   <url>
+    <loc>https://zfengchen.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2022-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zfengchen.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2022-01-27</lastmod>
     <changefreq>daily</changefreq>
@@ -341,13 +348,6 @@
   
   <url>
     <loc>https://zfengchen.github.io/tags/git/</loc>
-    <lastmod>2022-01-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zfengchen.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2022-01-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
