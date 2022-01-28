@@ -4,6 +4,105 @@
   
     
     <entry>
+      <title>基于vue2的天气查询</title>
+      <link href="/posts/25.html"/>
+      <url>/posts/25.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ul><li>这个是项目是对<a href="https://www.mubai.xyz/posts/12.html">基于vue的天气预报</a>的重构</li><li>项目已上线，现在可以通过访问<a href="http://dfmubai.gitee.io/vue_weather">天气查询</a>来使用该项目。</li></ul><h2 id="vue脚手架"><a href="#vue脚手架" class="headerlink" title="vue脚手架"></a>vue脚手架</h2><p>Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统，提供：</p><ul><li>通过 @vue/cli 实现的交互式的项目脚手架。</li><li>通过 @vue/cli + @vue/cli-service-global 实现的零配置原型开发。</li><li>一个运行时依赖 (@vue/cli-service)，该依赖：<ul><li>可升级；</li><li>基于 webpack 构建，并带有合理的默认配置；</li><li>可以通过项目内的配置文件进行配置；</li><li>可以通过插件进行扩展。</li></ul></li><li>一个丰富的官方插件集合，集成了前端生态中最好的工具。</li><li>一套完全图形化的创建和管理 Vue.js 项目的用户界面。</li></ul><h2 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h2><p>输入城市名称就可以查询到未来5天的天气情况。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> Vue </tag>
+            
+            <tag> Ajax </tag>
+            
+            <tag> Axios </tag>
+            
+            <tag> Vant </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>基于vue2的校园实时防疫监控</title>
+      <link href="/posts/24.html"/>
+      <url>/posts/24.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>项目已上线，现在可以通过访问<a href="http://www.mubai.xyz/vue-ncov/">基于vue的校园实时防疫监控</a>来使用。</p><h1 id="基于vue的校园实时防疫监控"><a href="#基于vue的校园实时防疫监控" class="headerlink" title="基于vue的校园实时防疫监控"></a>基于vue的校园实时防疫监控</h1><h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><ol><li>Vue基础知识</li><li>Axios网络请求</li><li>Echarts可视化</li><li>Swiper焦点轮播图</li><li>Vue-Router</li><li>封装组件</li></ol><h2 id="可使用地址"><a href="#可使用地址" class="headerlink" title="可使用地址"></a>可使用地址</h2><p>用友：<a href="https://api.yonyoucloud.com/apilink/#/">https://api.yonyoucloud.com/apilink/#/</a><br>天行：<a href="https://www.tianapi.com/">https://www.tianapi.com/</a></p><h2 id="项目运行"><a href="#项目运行" class="headerlink" title="项目运行"></a>项目运行</h2><ol><li>安装依赖<pre class="line-numbers language-js" data-language="js"><code class="language-js">npm i<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li>开发环境下运行<pre class="line-numbers language-js" data-language="js"><code class="language-js">npm run serve<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li>或者生产环境下运行<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 安装依赖</span>npm i <span class="token operator">-</span>g serve<span class="token comment">// 项目打包</span>npm i build<span class="token comment">// 项目本地预览</span>serve <span class="token operator">-</span>s dist<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ol><h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="https://www.ipicbed.com/images/2022/01/06/vue-nocv-0fed2e615278bf3e.png" alt="vue-nocv-0fed2e615278bf3e.png"><br><img src="https://www.ipicbed.com/images/2022/01/06/vue-nocv--cbf133fae3ef9f5c.png" alt="vue-nocv--cbf133fae3ef9f5c.png"><br><img src="https://www.ipicbed.com/images/2022/01/06/vue-nocv--.png" alt="vue-nocv--.png"><br><img src="https://www.ipicbed.com/images/2022/01/06/vue-nocv-.png" alt="vue-nocv-.png"><br><img src="https://www.ipicbed.com/images/2022/01/06/vue-nocv-cddf4d6d12ed7174.png" alt="vue-nocv-cddf4d6d12ed7174.png"><br><img src="https://www.ipicbed.com/images/2022/01/06/vue-nocv-5578ed07b919965a.png" alt="vue-nocv-5578ed07b919965a.png"></p><h2 id="开发过程中的思维方式"><a href="#开发过程中的思维方式" class="headerlink" title="开发过程中的思维方式"></a>开发过程中的思维方式</h2><ol><li>在Vue框架中，是组件式开发，将组件分离的更加细致一点</li></ol><h2 id="关于组件实例化问题"><a href="#关于组件实例化问题" class="headerlink" title="关于组件实例化问题"></a>关于组件实例化问题</h2><ol><li>拆分中组件之后，组件的多次调用，会每一次实例化一个独立的对象</li></ol><h2 id="未解决问题"><a href="#未解决问题" class="headerlink" title="未解决问题"></a>未解决问题</h2><ol><li>跨域问题(主要由后端解决)<ul><li>开发环境<br>  开发环境下的跨域处理，只能在开发环境下运行，打包之后是不能运行的<br>  proxy都是开发环境跨域</li><li>生产环境<br>  cors(主)<br>  jsonp(次)</li></ul></li><li>打包路径问题<br> publicPath指定具体子路径信息 <pre class="line-numbers language-js" data-language="js"><code class="language-js">publicPath<span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token string">'/covid19'</span> <span class="token operator">:</span> <span class="token string">'/'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> Vue </tag>
+            
+            <tag> Ajax </tag>
+            
+            <tag> Axios </tag>
+            
+            <tag> Vue-Router </tag>
+            
+            <tag> Echarts </tag>
+            
+            <tag> Swiper </tag>
+            
+            <tag> Vant </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Valine评论问题-国外版(置顶)</title>
+      <link href="/posts/23.html"/>
+      <url>/posts/23.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ul><li><p>自从valine更新后，通用的请求域名已经失效，根据github社区的大佬们讨论，添加了serverUrls后，理论上应该可以重新访问。</p></li><li><p>但是通过postman测试，访问的域名还是以前旧的通用域名。</p></li><li><p>更加离谱的是在重新刷新网页后就可以向新的域名发起请求并能获取到数据。而且每一次进去到博客，都要重新刷新网页清理缓存才能向新的域名发起正确的请求。</p></li></ul><h3 id="所以请各位访客想评论的话，就只能刷新页面，才能正常地进行评论。"><a href="#所以请各位访客想评论的话，就只能刷新页面，才能正常地进行评论。" class="headerlink" title="所以请各位访客想评论的话，就只能刷新页面，才能正常地进行评论。"></a>所以请各位访客想评论的话，就只能刷新页面，才能正常地进行评论。</h3><h2 id="leancloud国内版本和国外版本区别"><a href="#leancloud国内版本和国外版本区别" class="headerlink" title="leancloud国内版本和国外版本区别"></a>leancloud国内版本和国外版本区别</h2><p>国外版不需要实名，国内版需要实名制，所以，大部分会选择国外版本。</p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>我的博客是hexo+butterfly，评论系统用的是valine。然后leancloud更新后就不允许使用通用域名访问数据。</p><h2 id="解决方法-别人的"><a href="#解决方法-别人的" class="headerlink" title="解决方法(别人的)"></a>解决方法(别人的)</h2><p>CSDN上有位熊第就遇到和我一样的情况，他也给出了解决方法。<a href="https://blog.csdn.net/hubojing/article/details/121770387?spm=1001.2101.3001.6650.8&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8.pc_relevant_default&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8.pc_relevant_default&amp;utm_relevant_index=12">【解决方法】Valine评论不显示</a></p><h2 id="解决方法-自己的"><a href="#解决方法-自己的" class="headerlink" title="解决方法(自己的)"></a>解决方法(自己的)</h2><p>我改用国内版，一切搞定…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Valine </tag>
+            
+            <tag> Leancloud </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>javascript里的this</title>
       <link href="/posts/22.html"/>
       <url>/posts/22.html</url>
