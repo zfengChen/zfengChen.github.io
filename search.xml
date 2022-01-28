@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>番剧推荐</title>
+      <link href="/posts/26.html"/>
+      <url>/posts/26.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 动漫 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 番剧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于vue2的天气查询</title>
       <link href="/posts/25.html"/>
       <url>/posts/25.html</url>
@@ -61,13 +86,13 @@
             
             <tag> Axios </tag>
             
+            <tag> Vant </tag>
+            
             <tag> Vue-Router </tag>
             
             <tag> Echarts </tag>
             
             <tag> Swiper </tag>
-            
-            <tag> Vant </tag>
             
         </tags>
       
@@ -76,7 +101,7 @@
     
     
     <entry>
-      <title>Valine评论问题-国外版(置顶)</title>
+      <title>Valine评论问题-已解决</title>
       <link href="/posts/23.html"/>
       <url>/posts/23.html</url>
       

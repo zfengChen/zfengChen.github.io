@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zfengchen.github.io/posts/25.html</loc>
+    <loc>https://zfengchen.github.io/bangumis/index.html</loc>
+    
+    <lastmod>2022-01-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/posts/26.html</loc>
     
     <lastmod>2022-01-28</lastmod>
     
@@ -17,6 +24,13 @@
   
   <url>
     <loc>https://zfengchen.github.io/posts/23.html</loc>
+    
+    <lastmod>2022-01-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/posts/25.html</loc>
     
     <lastmod>2022-01-28</lastmod>
     
@@ -305,14 +319,14 @@
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/tags/github/</loc>
+    <loc>https://zfengchen.github.io/tags/artTemplate/</loc>
     <lastmod>2022-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/tags/artTemplate/</loc>
+    <loc>https://zfengchen.github.io/tags/github/</loc>
     <lastmod>2022-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -403,6 +417,13 @@
   </url>
   
   <url>
+    <loc>https://zfengchen.github.io/tags/Vant/</loc>
+    <lastmod>2022-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zfengchen.github.io/tags/Vue-Router/</loc>
     <lastmod>2022-01-28</lastmod>
     <changefreq>daily</changefreq>
@@ -424,7 +445,7 @@
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/tags/Vant/</loc>
+    <loc>https://zfengchen.github.io/tags/%E7%95%AA%E5%89%A7/</loc>
     <lastmod>2022-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -455,6 +476,13 @@
   
   <url>
     <loc>https://zfengchen.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-01-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/categories/%E5%8A%A8%E6%BC%AB/</loc>
     <lastmod>2022-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
