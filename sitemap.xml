@@ -382,13 +382,6 @@
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/tags/mysql/</loc>
-    <lastmod>2022-01-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zfengchen.github.io/tags/git/</loc>
     <lastmod>2022-01-29</lastmod>
     <changefreq>daily</changefreq>
@@ -396,14 +389,7 @@
   </url>
   
   <url>
-    <loc>https://zfengchen.github.io/tags/this/</loc>
-    <lastmod>2022-01-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zfengchen.github.io/tags/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%A2%98/</loc>
+    <loc>https://zfengchen.github.io/tags/mysql/</loc>
     <lastmod>2022-01-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -418,6 +404,20 @@
   
   <url>
     <loc>https://zfengchen.github.io/tags/Leancloud/</loc>
+    <lastmod>2022-01-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/tags/this/</loc>
+    <lastmod>2022-01-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zfengchen.github.io/tags/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91%E9%A2%98/</loc>
     <lastmod>2022-01-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
