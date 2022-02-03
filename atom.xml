@@ -213,13 +213,13 @@
     
     <category term="Axios" scheme="https://www.mubai.xyz/tags/Axios/"/>
     
-    <category term="Vant" scheme="https://www.mubai.xyz/tags/Vant/"/>
-    
     <category term="Vue-Router" scheme="https://www.mubai.xyz/tags/Vue-Router/"/>
     
     <category term="Echarts" scheme="https://www.mubai.xyz/tags/Echarts/"/>
     
     <category term="Swiper" scheme="https://www.mubai.xyz/tags/Swiper/"/>
+    
+    <category term="Vant" scheme="https://www.mubai.xyz/tags/Vant/"/>
     
   </entry>
   
