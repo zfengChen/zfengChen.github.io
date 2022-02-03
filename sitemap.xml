@@ -416,14 +416,14 @@
 
   
   <url>
-    <loc>https://www.mubai.xyz/tags/%E6%83%B3%E6%B3%95/</loc>
+    <loc>https://www.mubai.xyz/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2022-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://www.mubai.xyz/tags/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2022-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -451,14 +451,14 @@
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/tags/github/</loc>
+    <loc>https://www.mubai.xyz/tags/artTemplate/</loc>
     <lastmod>2022-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/tags/artTemplate/</loc>
+    <loc>https://www.mubai.xyz/tags/github/</loc>
     <lastmod>2022-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -614,14 +614,14 @@
 
   
   <url>
-    <loc>https://www.mubai.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://www.mubai.xyz/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2022-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://www.mubai.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2022-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
