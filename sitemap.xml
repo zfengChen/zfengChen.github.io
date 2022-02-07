@@ -479,13 +479,6 @@
 
   
   <url>
-    <loc>https://www.mubai.xyz/tags/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.mubai.xyz/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -493,7 +486,28 @@
   </url>
   
   <url>
+    <loc>https://www.mubai.xyz/tags/%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.mubai.xyz/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mubai.xyz/tags/github/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mubai.xyz/tags/artTemplate/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -508,20 +522,6 @@
   
   <url>
     <loc>https://www.mubai.xyz/tags/mongodb/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mubai.xyz/tags/artTemplate/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mubai.xyz/tags/github/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -563,14 +563,14 @@
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://www.mubai.xyz/tags/mysql/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/tags/mysql/</loc>
+    <loc>https://www.mubai.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -585,6 +585,27 @@
   
   <url>
     <loc>https://www.mubai.xyz/tags/this/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mubai.xyz/tags/Valine/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mubai.xyz/tags/Leancloud/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mubai.xyz/tags/Vant/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -612,28 +633,21 @@
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/tags/Vant/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mubai.xyz/tags/Valine/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.mubai.xyz/tags/Leancloud/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.mubai.xyz/tags/%E7%95%AA%E5%89%A7/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mubai.xyz/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mubai.xyz/tags/%E9%9D%A2%E8%AF%95/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -647,7 +661,7 @@
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/tags/%E9%9D%A2%E8%AF%95/</loc>
+    <loc>https://www.mubai.xyz/tags/HTML/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -668,34 +682,13 @@
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.mubai.xyz/tags/CSS/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://www.mubai.xyz/tags/HTML/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://www.mubai.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://www.mubai.xyz/categories/%E5%AD%A6%E4%B9%A0/</loc>
@@ -705,7 +698,7 @@
   </url>
   
   <url>
-    <loc>https://www.mubai.xyz/categories/%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://www.mubai.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -713,6 +706,13 @@
   
   <url>
     <loc>https://www.mubai.xyz/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.mubai.xyz/categories/%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2022-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

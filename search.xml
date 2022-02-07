@@ -260,9 +260,9 @@
             
             <tag> 前端 </tag>
             
-            <tag> 面试 </tag>
-            
             <tag> 作用域 </tag>
+            
+            <tag> 面试 </tag>
             
         </tags>
       
@@ -289,9 +289,9 @@
             
             <tag> 前端 </tag>
             
-            <tag> 闭包 </tag>
-            
             <tag> 面试 </tag>
+            
+            <tag> 闭包 </tag>
             
         </tags>
       
@@ -395,13 +395,13 @@
             
             <tag> Axios </tag>
             
+            <tag> Vant </tag>
+            
             <tag> Vue-Router </tag>
             
             <tag> Echarts </tag>
             
             <tag> Swiper </tag>
-            
-            <tag> Vant </tag>
             
         </tags>
       
